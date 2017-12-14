@@ -13,11 +13,15 @@
 		82BA54E31FE10E70001C5734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BA54E21FE10E70001C5734 /* Assets.xcassets */; };
 		82BA54E61FE10E70001C5734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BA54E41FE10E70001C5734 /* LaunchScreen.storyboard */; };
 		82BA54E91FE10E70001C5734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA54E81FE10E70001C5734 /* main.m */; };
-		82BA54F51FE11147001C5734 /* UIWindow+TrackLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA54F41FE11147001C5734 /* UIWindow+TrackLoad.m */; };
-		82BA54F81FE111B6001C5734 /* TrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA54F71FE111B6001C5734 /* TrackView.m */; };
-		82BA55011FE1180B001C5734 /* NSObject+TrackSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55001FE1180B001C5734 /* NSObject+TrackSwizzle.m */; };
-		82BA55041FE1193F001C5734 /* TrackInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55031FE1193F001C5734 /* TrackInfoView.m */; };
-		82BA55211FE2175D001C5734 /* TrackUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55201FE2175D001C5734 /* TrackUtil.m */; };
+		82BA55451FE25703001C5734 /* UIWindow+TrackLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55331FE25703001C5734 /* UIWindow+TrackLoad.m */; };
+		82BA55461FE25703001C5734 /* TrackInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55351FE25703001C5734 /* TrackInfoTableViewCell.m */; };
+		82BA55471FE25703001C5734 /* NSObject+TrackSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55381FE25703001C5734 /* NSObject+TrackSwizzle.m */; };
+		82BA55481FE25703001C5734 /* TrackGeneralView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA553A1FE25703001C5734 /* TrackGeneralView.m */; };
+		82BA55491FE25703001C5734 /* TrackInfoTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA553C1FE25703001C5734 /* TrackInfoTableViewDataSource.m */; };
+		82BA554A1FE25703001C5734 /* TrackViewModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA553D1FE25703001C5734 /* TrackViewModels.m */; };
+		82BA554B1FE25703001C5734 /* TrackInfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA553F1FE25703001C5734 /* TrackInfoTableView.m */; };
+		82BA554C1FE25703001C5734 /* TrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55411FE25703001C5734 /* TrackView.m */; };
+		82BA554D1FE25703001C5734 /* TrackInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BA55441FE25703001C5734 /* TrackInfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +35,24 @@
 		82BA54E51FE10E70001C5734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82BA54E71FE10E70001C5734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82BA54E81FE10E70001C5734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		82BA54F31FE11147001C5734 /* UIWindow+TrackLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TrackLoad.h"; sourceTree = "<group>"; };
-		82BA54F41FE11147001C5734 /* UIWindow+TrackLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TrackLoad.m"; sourceTree = "<group>"; };
-		82BA54F61FE111B6001C5734 /* TrackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackView.h; sourceTree = "<group>"; };
-		82BA54F71FE111B6001C5734 /* TrackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackView.m; sourceTree = "<group>"; };
-		82BA54FF1FE1180B001C5734 /* NSObject+TrackSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TrackSwizzle.h"; sourceTree = "<group>"; };
-		82BA55001FE1180B001C5734 /* NSObject+TrackSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TrackSwizzle.m"; sourceTree = "<group>"; };
-		82BA55021FE1193F001C5734 /* TrackInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackInfoView.h; sourceTree = "<group>"; };
-		82BA55031FE1193F001C5734 /* TrackInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackInfoView.m; sourceTree = "<group>"; };
-		82BA551F1FE2175D001C5734 /* TrackUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackUtil.h; sourceTree = "<group>"; };
-		82BA55201FE2175D001C5734 /* TrackUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackUtil.m; sourceTree = "<group>"; };
+		82BA55331FE25703001C5734 /* UIWindow+TrackLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TrackLoad.m"; sourceTree = "<group>"; };
+		82BA55341FE25703001C5734 /* TrackInfoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackInfoTableView.h; sourceTree = "<group>"; };
+		82BA55351FE25703001C5734 /* TrackInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackInfoTableViewCell.m; sourceTree = "<group>"; };
+		82BA55361FE25703001C5734 /* TrackViewModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewModels.h; sourceTree = "<group>"; };
+		82BA55371FE25703001C5734 /* TrackInfoTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackInfoTableViewDataSource.h; sourceTree = "<group>"; };
+		82BA55381FE25703001C5734 /* NSObject+TrackSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TrackSwizzle.m"; sourceTree = "<group>"; };
+		82BA55391FE25703001C5734 /* TrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackView.h; sourceTree = "<group>"; };
+		82BA553A1FE25703001C5734 /* TrackGeneralView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackGeneralView.m; sourceTree = "<group>"; };
+		82BA553B1FE25703001C5734 /* TrackInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackInfoView.h; sourceTree = "<group>"; };
+		82BA553C1FE25703001C5734 /* TrackInfoTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackInfoTableViewDataSource.m; sourceTree = "<group>"; };
+		82BA553D1FE25703001C5734 /* TrackViewModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewModels.m; sourceTree = "<group>"; };
+		82BA553E1FE25703001C5734 /* TrackInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackInfoTableViewCell.h; sourceTree = "<group>"; };
+		82BA553F1FE25703001C5734 /* TrackInfoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackInfoTableView.m; sourceTree = "<group>"; };
+		82BA55401FE25703001C5734 /* UIWindow+TrackLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TrackLoad.h"; sourceTree = "<group>"; };
+		82BA55411FE25703001C5734 /* TrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackView.m; sourceTree = "<group>"; };
+		82BA55421FE25703001C5734 /* NSObject+TrackSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TrackSwizzle.h"; sourceTree = "<group>"; };
+		82BA55431FE25703001C5734 /* TrackGeneralView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackGeneralView.h; sourceTree = "<group>"; };
+		82BA55441FE25703001C5734 /* TrackInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackInfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +85,7 @@
 		82BA54D81FE10E70001C5734 /* TrackiViews */ = {
 			isa = PBXGroup;
 			children = (
-				82BA54EF1FE10EB5001C5734 /* UTrack */,
+				82BA55321FE25703001C5734 /* UTrack */,
 				82BA54D91FE10E70001C5734 /* AppDelegate.h */,
 				82BA54DA1FE10E70001C5734 /* AppDelegate.m */,
 				82BA54DC1FE10E70001C5734 /* ViewController.h */,
@@ -87,19 +99,27 @@
 			path = TrackiViews;
 			sourceTree = "<group>";
 		};
-		82BA54EF1FE10EB5001C5734 /* UTrack */ = {
+		82BA55321FE25703001C5734 /* UTrack */ = {
 			isa = PBXGroup;
 			children = (
-				82BA54F61FE111B6001C5734 /* TrackView.h */,
-				82BA54F71FE111B6001C5734 /* TrackView.m */,
-				82BA55021FE1193F001C5734 /* TrackInfoView.h */,
-				82BA55031FE1193F001C5734 /* TrackInfoView.m */,
-				82BA54F31FE11147001C5734 /* UIWindow+TrackLoad.h */,
-				82BA54F41FE11147001C5734 /* UIWindow+TrackLoad.m */,
-				82BA54FF1FE1180B001C5734 /* NSObject+TrackSwizzle.h */,
-				82BA55001FE1180B001C5734 /* NSObject+TrackSwizzle.m */,
-				82BA551F1FE2175D001C5734 /* TrackUtil.h */,
-				82BA55201FE2175D001C5734 /* TrackUtil.m */,
+				82BA55331FE25703001C5734 /* UIWindow+TrackLoad.m */,
+				82BA55341FE25703001C5734 /* TrackInfoTableView.h */,
+				82BA55351FE25703001C5734 /* TrackInfoTableViewCell.m */,
+				82BA55361FE25703001C5734 /* TrackViewModels.h */,
+				82BA55371FE25703001C5734 /* TrackInfoTableViewDataSource.h */,
+				82BA55381FE25703001C5734 /* NSObject+TrackSwizzle.m */,
+				82BA55391FE25703001C5734 /* TrackView.h */,
+				82BA553A1FE25703001C5734 /* TrackGeneralView.m */,
+				82BA553B1FE25703001C5734 /* TrackInfoView.h */,
+				82BA553C1FE25703001C5734 /* TrackInfoTableViewDataSource.m */,
+				82BA553D1FE25703001C5734 /* TrackViewModels.m */,
+				82BA553E1FE25703001C5734 /* TrackInfoTableViewCell.h */,
+				82BA553F1FE25703001C5734 /* TrackInfoTableView.m */,
+				82BA55401FE25703001C5734 /* UIWindow+TrackLoad.h */,
+				82BA55411FE25703001C5734 /* TrackView.m */,
+				82BA55421FE25703001C5734 /* NSObject+TrackSwizzle.h */,
+				82BA55431FE25703001C5734 /* TrackGeneralView.h */,
+				82BA55441FE25703001C5734 /* TrackInfoView.m */,
 			);
 			path = UTrack;
 			sourceTree = "<group>";
@@ -175,14 +195,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BA55491FE25703001C5734 /* TrackInfoTableViewDataSource.m in Sources */,
+				82BA55461FE25703001C5734 /* TrackInfoTableViewCell.m in Sources */,
 				82BA54DE1FE10E70001C5734 /* ViewController.m in Sources */,
-				82BA55211FE2175D001C5734 /* TrackUtil.m in Sources */,
+				82BA55451FE25703001C5734 /* UIWindow+TrackLoad.m in Sources */,
 				82BA54E91FE10E70001C5734 /* main.m in Sources */,
-				82BA54F81FE111B6001C5734 /* TrackView.m in Sources */,
-				82BA54F51FE11147001C5734 /* UIWindow+TrackLoad.m in Sources */,
-				82BA55011FE1180B001C5734 /* NSObject+TrackSwizzle.m in Sources */,
-				82BA55041FE1193F001C5734 /* TrackInfoView.m in Sources */,
+				82BA55481FE25703001C5734 /* TrackGeneralView.m in Sources */,
+				82BA55471FE25703001C5734 /* NSObject+TrackSwizzle.m in Sources */,
+				82BA554B1FE25703001C5734 /* TrackInfoTableView.m in Sources */,
+				82BA554C1FE25703001C5734 /* TrackView.m in Sources */,
 				82BA54DB1FE10E70001C5734 /* AppDelegate.m in Sources */,
+				82BA554D1FE25703001C5734 /* TrackInfoView.m in Sources */,
+				82BA554A1FE25703001C5734 /* TrackViewModels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -305,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -319,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG9UMSFT35;
 				INFOPLIST_FILE = TrackiViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhen.TrackiViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG9UMSFT35;
 				INFOPLIST_FILE = TrackiViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhen.TrackiViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

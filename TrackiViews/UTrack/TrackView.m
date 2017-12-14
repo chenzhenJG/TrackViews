@@ -11,11 +11,12 @@
 @interface TrackView() {
     CGFloat _touch_left,_touch_top;
     NSMutableArray *hitArrayViews;
-    TrackInfoView *_infoView;
+    UIView *_focusView;
 }
 @property (nonatomic,strong) UILabel *touchLabel;
 @property (nonatomic,strong) UIWindow *infoWindow;
 @property (nonatomic,strong) UILabel *infoLabel;
+@property (nonatomic,strong) TrackInfoView *infoView;
 @end
 @implementation TrackView
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -24,6 +25,7 @@
         hitArrayViews=[[NSMutableArray alloc] init];
         [self addSubview:self.touchLabel];
         [self.window addSubview:self.infoWindow];
+        [self.window addSubview:self.infoView];
     }
     return self;
 }
@@ -107,9 +109,21 @@
     }
     return _infoLabel;
 }
+- (TrackInfoView *)infoView {
+    if (!_infoView) {
+        _infoView = [[TrackInfoView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        _infoView.backgroundColor = [UIColor blackColor];
+        _infoView.alpha = 0;
+    }
+    return _infoView;
+}
 
 - (void)onclickTrackInfoView {
-    
+    _infoView.alpha = 0.6;
+    _infoView.hidden = NO;
+    if (_focusView) {
+        _infoView.currentView = _focusView;
+    }
 }
 
 - (void)hiddenInfoWindow {
@@ -129,6 +143,7 @@
 - (UIView *)getFocusView : (UIView *)view point:(CGPoint)point {
     [self hitTest:view Point:point];
     UIView *viewTop=[hitArrayViews lastObject];//获取焦点后的视图
+    _focusView = viewTop;
     [hitArrayViews removeAllObjects];
     return viewTop;
 }
