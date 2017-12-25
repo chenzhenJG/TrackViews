@@ -21,6 +21,8 @@
 
 @property (nonatomic,strong) UIButton *updateFrameButton;
 @property (nonatomic,strong) UIButton *reductionFrameButton;
+
+
 @end
 @implementation TrackGeneralView
 
@@ -35,6 +37,7 @@
         [self addSubview:self.heightLabel];
         [self addSubview:self.updateFrameButton];
         [self addSubview:self.reductionFrameButton];
+       
     }
     return self;
 }
@@ -66,6 +69,7 @@
         _xLabel = [[UILabel alloc]initWithFrame:CGRectMake(24, _classNameLabel.frame.origin.y+_classNameLabel.frame.size.height, width, 40)];
         _xLabel.textColor = [UIColor whiteColor];
         _xLabel.font = [UIFont systemFontOfSize:14];
+        
     }
     return _xLabel;
 }
@@ -100,6 +104,8 @@
     if (!_updateFrameButton) {
         _updateFrameButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_updateFrameButton setFrame:CGRectMake(width, _heightLabel.frame.origin.y+_heightLabel.frame.size.height, 40, 40)];
+        _updateFrameButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        _updateFrameButton.layer.borderWidth = .5;
         [_updateFrameButton setTitle:@"修改" forState:UIControlStateNormal];
         _updateFrameButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_updateFrameButton addTarget:self action:@selector(update:) forControlEvents:UIControlEventTouchUpInside];
@@ -110,9 +116,12 @@
     if (!_reductionFrameButton) {
         _reductionFrameButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_reductionFrameButton setFrame:CGRectMake(width - 60, _heightLabel.frame.origin.y+_heightLabel.frame.size.height, 40, 40)];
+        _reductionFrameButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        _reductionFrameButton.layer.borderWidth = .5;
         [_reductionFrameButton setTitle:@"还原" forState:UIControlStateNormal];
         _reductionFrameButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_reductionFrameButton addTarget:self action:@selector(reduction:) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     return _reductionFrameButton;
 }

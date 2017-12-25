@@ -12,8 +12,10 @@ typedef enum : NSUInteger {
     SUPERVIEWS  = 1 << 1,
     SUBVIEWS    = 1 << 3,
 } LoadType;
+
+
 @interface TrackInfoTableViewDataSource : NSObject <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,weak) TrackInfoTableView *tableView;
-@property (nonatomic,strong) UIView *currentView;
+@property (nonatomic,weak) UIView *currentView;
 @property (nonatomic,assign) LoadType loadType;
 @end

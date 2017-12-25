@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (nonatomic,copy) NSString *a;
 
 @end
 
@@ -16,11 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 50, 50)];
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
+  
+   
 }
+//- (void)setA:(NSString *)a {
+//    _a = a;
+//}
 
 
 - (void)didReceiveMemoryWarning {

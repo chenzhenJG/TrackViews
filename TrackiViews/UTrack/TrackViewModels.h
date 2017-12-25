@@ -19,5 +19,7 @@
 + (TrackGeneral *)getGeneralWithView:(UIView *)view;
 @end
 @interface TrackViewModels : NSObject
+@property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *subTitle;
 
 @end

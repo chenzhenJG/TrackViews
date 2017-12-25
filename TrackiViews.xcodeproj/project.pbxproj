@@ -102,24 +102,24 @@
 		82BA55321FE25703001C5734 /* UTrack */ = {
 			isa = PBXGroup;
 			children = (
+				82BA55401FE25703001C5734 /* UIWindow+TrackLoad.h */,
 				82BA55331FE25703001C5734 /* UIWindow+TrackLoad.m */,
 				82BA55341FE25703001C5734 /* TrackInfoTableView.h */,
-				82BA55351FE25703001C5734 /* TrackInfoTableViewCell.m */,
-				82BA55361FE25703001C5734 /* TrackViewModels.h */,
-				82BA55371FE25703001C5734 /* TrackInfoTableViewDataSource.h */,
-				82BA55381FE25703001C5734 /* NSObject+TrackSwizzle.m */,
-				82BA55391FE25703001C5734 /* TrackView.h */,
-				82BA553A1FE25703001C5734 /* TrackGeneralView.m */,
-				82BA553B1FE25703001C5734 /* TrackInfoView.h */,
-				82BA553C1FE25703001C5734 /* TrackInfoTableViewDataSource.m */,
-				82BA553D1FE25703001C5734 /* TrackViewModels.m */,
-				82BA553E1FE25703001C5734 /* TrackInfoTableViewCell.h */,
 				82BA553F1FE25703001C5734 /* TrackInfoTableView.m */,
-				82BA55401FE25703001C5734 /* UIWindow+TrackLoad.h */,
+				82BA553E1FE25703001C5734 /* TrackInfoTableViewCell.h */,
+				82BA55351FE25703001C5734 /* TrackInfoTableViewCell.m */,
+				82BA55371FE25703001C5734 /* TrackInfoTableViewDataSource.h */,
+				82BA553C1FE25703001C5734 /* TrackInfoTableViewDataSource.m */,
+				82BA55391FE25703001C5734 /* TrackView.h */,
 				82BA55411FE25703001C5734 /* TrackView.m */,
-				82BA55421FE25703001C5734 /* NSObject+TrackSwizzle.h */,
-				82BA55431FE25703001C5734 /* TrackGeneralView.h */,
+				82BA553B1FE25703001C5734 /* TrackInfoView.h */,
 				82BA55441FE25703001C5734 /* TrackInfoView.m */,
+				82BA553D1FE25703001C5734 /* TrackViewModels.m */,
+				82BA55361FE25703001C5734 /* TrackViewModels.h */,
+				82BA55421FE25703001C5734 /* NSObject+TrackSwizzle.h */,
+				82BA55381FE25703001C5734 /* NSObject+TrackSwizzle.m */,
+				82BA55431FE25703001C5734 /* TrackGeneralView.h */,
+				82BA553A1FE25703001C5734 /* TrackGeneralView.m */,
 			);
 			path = UTrack;
 			sourceTree = "<group>";

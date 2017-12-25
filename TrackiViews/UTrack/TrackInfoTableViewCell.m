@@ -25,10 +25,14 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         //custom
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        UILabel *trackTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(12, 12, width - 24, 24)];
-        trackTitleLabel.font = [UIFont systemFontOfSize:13];
+        UILabel *trackTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(14, 12, width - 24, 24)];
+        trackTitleLabel.font = [UIFont systemFontOfSize:15];
         trackTitleLabel.textColor = [UIColor redColor];
         _trackTitleLabel = trackTitleLabel;
+        UILabel *trackSubTitleLabelLabel = [[UILabel alloc]initWithFrame:CGRectMake(14, 40, width - 24, 24)];
+        trackSubTitleLabelLabel.font = [UIFont systemFontOfSize:13];
+        trackSubTitleLabelLabel.textColor = [UIColor redColor];
+        _trackSubTitleLabel = trackSubTitleLabelLabel;
         [self.contentView addSubview:self.trackTitleLabel];
         [self.contentView addSubview:self.trackSubTitleLabel];
     }
