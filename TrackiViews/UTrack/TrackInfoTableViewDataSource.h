@@ -10,7 +10,7 @@
 typedef enum : NSUInteger {
     GENERAL     = 1 << 0,
     SUPERVIEWS  = 1 << 1,
-    SUBVIEWS    = 1 << 3,
+    SUBVIEWS    = 1 << 2,
 } LoadType;
 
 

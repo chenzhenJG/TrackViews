@@ -81,6 +81,21 @@
 
 - (void)didselectedButton :(UIButton *)sender{
     NSInteger tag = sender.tag;
+//    LoadType type;
+//    switch (tag) {
+//        case GENERAL:
+//            type = GENERAL;
+//            break;
+//        case SUPERVIEWS:
+//            type = SUPERVIEWS;
+//            break;
+//        case SUBVIEWS:
+//            type = SUBVIEWS;
+//            break;
+//        default:
+//            type = GENERAL;
+//            break;
+//    }
     [self reloadData:tag];
 }
 
